@@ -1,3 +1,44 @@
 .foreground-navbar {
      color: blue;
 }
+
+@font-face {
+  font-family: "Chicago";
+  src: url("chicago.ttf") format("truetype");
+  font-display: swap;
+}
+
+
+button, h1, h2{
+     font-family: "Chicago", "Geneva", sans-serif;
+}
+
+
+a.mac-btn {
+  display: inline-block;
+  padding: 3px 18px;
+  font: 12px/16px "ChicagoFLF", "Chicago", "Charcoal", "Geneva", sans-serif;
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: default;
+  user-select: none;
+  -webkit-font-smoothing: none;
+}
+
+a.mac-btn:active {
+  color: #fff;
+  background: #000;
+}
+
+a.mac-btn.default {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 5px #000;
+  margin: 5px;
+}
+
+a.mac-btn:focus-visible {
+  outline: 1px dotted #000;
+  outline-offset: 2px;
+}
